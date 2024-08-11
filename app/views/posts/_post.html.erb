@@ -10,6 +10,11 @@
   </p>
 
   <p>
+    <strong>Posted by:</strong>
+    <%= link_to post.user.email, user_path(post.user.id) %>
+  </p>
+
+  <p>
     <strong>Body:</strong>
     <%= post.body %>
   </p>
